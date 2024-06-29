@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Money Master</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "Montserrat", sans-serif;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/b0cffcfa44.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="text-[#31A5AC] text-5xl font-bold text-center p-2 md:p-3 lg:p-8">
+            Money Master <i class="fa-solid fa-sack-dollar"></i>
+        </h1>
+    </header>
+    <main>
+        <section class="flex flex-col lg:flex-row container mx-auto justify-evenly">
+            <div class="w-full lg:w-1/2 justify-evenly flex pb-6">
+                <img src="money-master.png" alt="" class="max-h-full w-auto lg:w-full lg:h-auto">
+            </div>
+
+            <div class="bg-[#F8F8F8] flex-1 place-content-center pr-2 md:pr-10 lg:pr-8">
+                <table class="table-auto w-full md:min-w-x text-center">
+                    <tbody class="">
+                        <tr class="">
+                            <td colspan="6" class="text-2xl font-semibold">Income <br></td>
+                        </tr>
+                      <tr>
+                        <td colspan="2" class="text-right text-xl">Income:</td>
+                        <td colspan="4"><input type="number" name="" id="income" class="bg-[#DCDCDC] text-black rounded-md p-1 md:p-2 lg:p-3 w-full"></td>
+                      </tr>
+                      <tr><td><br></td></tr>
+                      <tr>
+                        <td colspan="6" class="text-2xl font-semibold">Expenses</td>
+                        </tr>
+                        <tr><td><br></td></tr>
+                      <tr>
+                        <td colspan="2" class="text-right text-xl">Food:</td>
+                        <td colspan="4"><input type="number" name="" id="expense-food" class="bg-[#DCDCDC] text-black rounded-md p-1 md:p-2 lg:p-3 w-full"></td>
+                      </tr>
+                      <tr><td><br></td></tr>
+                      <tr>
+                        <td colspan="2" class="text-right text-xl">Rent:</td>
+                        <td colspan="4"><input type="number" name="" id="expense-rent" class="bg-[#DCDCDC] text-black rounded-md p-1 md:p-2 lg:p-3 w-full"></td>
+                      </tr>
+                      <tr><td><br></td></tr>
+                      <tr>
+                        <td colspan="2" class="text-right text-xl">Clothes:</td>
+                        <td colspan="4"><input type="number" name="" id="expense-cloth" class="bg-[#DCDCDC] text-black rounded-md p-1 md:p-2 lg:p-3 w-full"></td>
+                      </tr>
+                      <tr><td><br></td></tr>
+                      <tr>
+                        <td colspan="6" class="">
+                            <button class="bg-[#59A5FF] rounded-md p-1 md:p-2 lg:p-3 text-white hover:bg-slate-400 font-bold text-xl" id="calculate-btn">Calculate</button>
+                        </td>
+                        </tr>
+                        <tr><td><br></td></tr>
+                        <tr>
+                            <td colspan="6" class="text-2xl font-semibold">Total Expenses: <span id="total-expense">00</span></td>
+                        </tr>
+                        <tr><td><br></td></tr>
+                        <tr>
+                            <td colspan="6" class="text-2xl font-semibold">Balance: <span id="balance">00</span></td>
+                        </tr>
+                        <tr><td><br></td></tr>
+                      <tr>
+                        <td colspan="1" class="text-xl text-right">Save:</td>
+                        <td colspan="2"><input type="number" name="" id="parcent" class="bg-[#DCDCDC] text-black rounded-md p-1 md:p-2 lg:p-3 w-full"></td>
+                        <td colspan="1" class="text-xl" style="text-align: center;">%</td>
+                        <td colspan="2">
+                            <button class="bg-[#59A5FF] rounded-md p-1 md:p-2 lg:p-3 text-white hover:bg-slate-400 font-bold text-xl w-full" id="save">
+                                Save
+                            </button>
+                        </td>
+                      </tr>
+                      <tr><td><br></td></tr>
+                      <tr>
+                        <td colspan="6" class="text-2xl font-semibold">Saving Amount: <span id="saving-amount">00</span></td>
+                      </tr>
+                      <tr><td><br></td></tr>
+                      <tr>
+                        <td colspan="6" class="text-2xl font-semibold">Remaining Balance: <span id="remain">00</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="js/script.js"></script>
+</html>
